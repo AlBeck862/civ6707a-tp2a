@@ -4,7 +4,7 @@ https://editor.p5js.org/Freudon/sketches/AjZtj4tSD
 
 ## Génération des particules
 
-
+** 1. Définition des particules
 Cette étape permet de créer la classe des particules. On y ajoute des paramètres comme les coordonnées, le mode, l'âge et l'heure.
 ```
 class Particle {
