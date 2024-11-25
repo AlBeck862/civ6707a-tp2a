@@ -4,7 +4,7 @@ https://editor.p5js.org/Freudon/sketches/AjZtj4tSD
 
 ## Génération des particules
 
-**1. Définition des particules**
+**1. Définition des particules** <br>
 Cette étape permet de créer la classe des particules. On y ajoute des paramètres comme les coordonnées, le mode, l'âge et l'heure.
 ```
 class Particle {
@@ -130,4 +130,20 @@ update() {
 }
 ```
 
+
+```
+function setParticles() {
+    let numParticles = int(particleInput.value());
+    if (numParticles > 0) {
+        totalParticles = numParticles; // Update the total number of particles
+        routesReady = 0; // Reset the ready counter
+        allRoutesReady = false; // Reset the flag
+
+        for (let i = 0; i < numParticles; i++) {
+            createNextParticle();
+        }
+    }
+}
+
+```
 ## Importation des données
