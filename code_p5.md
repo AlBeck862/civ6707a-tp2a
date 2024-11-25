@@ -2,7 +2,56 @@
 
 https://editor.p5js.org/Freudon/sketches/AjZtj4tSD
 
-## 1.Génération des particules
+## 0. Setup
+
+**0.1 Définition des particules** <br>
+
+```
+let fileType = 'ssv' // NE PAS OUBLIER DE CHANGER LE TYPE DE FICHIER (SSV pour ;)
+
+let table; 
+
+// User input variables
+let randomize = false;      
+let randomizeButton;        
+let particleInput;          
+let dataInputButton;        
+let dataInputLink;          
+let dataFileLoaded = false; // Track whether data file is loaded
+
+
+// Other variables
+let filteredRows = [];    // Array of selected data table rows
+let particles = [];       // Array of particles (vehicles)
+let currentIndex = 0;     
+let completedCount = 0;   
+let currentMode = '';     
+let currentMotif = '';    
+let currentModeColor;     
+let totalParticles = 0;
+let routesReady = 0;
+let allRoutesReady = false;
+let speedFactorInput;
+let speedFactor = 1;
+
+
+const mtmNad83 = "+proj=tmerc +lat_0=0 +lon_0=-73.5 +k=0.9999 +x_0=304800 +y_0=0 +datum=NAD83 +units=m +no_defs";
+const wgs84 = "+proj=longlat +datum=WGS84 +no_defs";
+
+let leafletMap;
+```
+**0.2 Mise en place de la carte** <br>
+```
+function setupMap() {
+  leafletMap = L.map('mapid').setView([45.5088, -73.5878], 11); // Center on Montreal
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(leafletMap);
+}
+```
+
+
+## 1. Génération des particules
 
 **1.1 Définition des particules** <br>
 Cette étape permet de créer la classe des particules. On y ajoute des paramètres comme les coordonnées, le mode, l'âge et l'heure.
