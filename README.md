@@ -40,18 +40,18 @@ Cette section s'agit d'un résumé. Cliquez **[ici]()** pour lire la méthodolog
 **Développement futur.** Nous tentons présentement d’afficher la chronométrie des déplacements à l’affiche. Nous espérons ensuite pouvoir lier le modèle d’intelligence artificielle (Python) à l’application web (p5.js Javascript) à l’aide d’un serveur, permettant donc à l’utilisateur d’accéder en temps réel à la génération de nouvelles données.
 
 ## Guide de l'usager
-Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/guide_generateur.md)** pour lire le tutoriel d'utilisation du générateur de données.
+Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/guide_generateur.md)** pour lire le tutoriel d'utilisation du générateur de données.
 
-Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/guide_visualisation.md)** pour lire le tutoriel d'utilisation de l'application web.
+Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/guide_visualisation.md)** pour lire le tutoriel d'utilisation de l'application web.
 
 ## Description du code (documentation)
 **Modèle d’intelligence artificielle (Python).**
 
-Cliquez **[ici]()** pour lire la documentation du code du générateur.
+Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/code_gen.md)** pour lire la documentation du code du générateur.
 
 **Application web (p5.js Javascript).**
 
-Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/code_p5.md)** pour lire la documentation du code de l'application web.
+Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/code_p5.md)** pour lire la documentation du code de l'application web.
 
 ## Limitations
 À venir
