@@ -2,9 +2,9 @@
 
 https://editor.p5js.org/Freudon/sketches/AjZtj4tSD
 
-## Génération des particules
+## 1.Génération des particules
 
-**1. Définition des particules** <br>
+**1.1 Définition des particules** <br>
 Cette étape permet de créer la classe des particules. On y ajoute des paramètres comme les coordonnées, le mode, l'âge et l'heure.
 ```
 class Particle {
@@ -129,7 +129,7 @@ update() {
   }
 }
 ```
-**2. Création des particules** <br>
+**1.2 Création des particules** <br>
 
 ```
 function setParticles() {
