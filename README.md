@@ -23,7 +23,9 @@ Dans un deuxième temps, ce projet vise la visualisation des données interpolé
 
 **GitHub** : le code, les données, et la documentation ont été téléversés sur la plateforme en ligne GitHub. 
 
-## Méthodologie et cheminement (voir : article principal sur la méthodologie)
+## Méthodologie et cheminement
+Cette section s'agit d'une ébauche. Cliquez **[ici]()** pour lire la méthodologie complète.
+
 **Planification du projet.** Avant de débuter notre travail, nous avons créé un plan général des composantes ainsi que des étapes du projet. Celui-ci se divise en trois composantes. La première composante est la génération de données, le deuxième composante est la visualisation, et la troisième composante est l’intégration des systèmes de génération et de visualisation.
 
 **Compréhension des données.** Afin de mieux comprendre les données OD, nous avons créé des visualisations de base nous permettant de plus facilement aborder l’interpolation de ces données à l’aide de l’intelligence artificielle.
@@ -40,11 +42,13 @@ Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/guide_gener
 Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/guide_visualisation.md)** pour lire le tutoriel d'utilisation de l'application web.
 
 ## Description du code (documentation)
-**Modèle d’intelligence artificielle (Python).** À venir
+**Modèle d’intelligence artificielle (Python).**
 
-**[Application web](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/code_p5.md) (p5.js Javascript).**
+Cliquez **[ici]()** pour lire la documentation du code du générateur.
 
-Cliquez ici pour lire la documentation du code de l'application web.
+**Application web (p5.js Javascript).**
+
+Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/code_p5.md)** pour lire la documentation du code de l'application web.
 
 ## Limitations
 À venir
