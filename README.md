@@ -37,7 +37,7 @@ Dans un deuxième temps, ce projet vise la visualisation des données interpolé
 ## Description du code (documentation)
 **Modèle d’intelligence artificielle (Python).** À venir
 
-**[Application web] (https://github.com/AlBeck862/civ6707a-tp2a/blob/main/code_p5.md) (p5.js Javascript).** 
+**[Application web](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/code_p5.md) (p5.js Javascript).** 
 
 ## Contributions
 À venir
