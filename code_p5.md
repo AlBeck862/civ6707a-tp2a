@@ -129,7 +129,7 @@ update() {
   }
 }
 ```
-
+**2. Création des particules** <br>
 
 ```
 function setParticles() {
