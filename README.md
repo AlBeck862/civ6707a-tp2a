@@ -7,7 +7,7 @@ Dans un premier temps, ce projet vise l’augmentation des données d’une enqu
 Dans un deuxième temps, ce projet vise la visualisation des données interpolées sur une carte interactive de la région métropolitaine de Montréal en format d’application web. La carte doit permettre l’agrandissement et le rétrécissement du champ de vision (_zoom-in/zoom-out_), ainsi que la visualisation de quartiers ou de secteurs en particulier. La génération de déplacements interpolés est à faire et à tracer à la guise de l’utilisateur dans l’un de deux modes. Dans le mode « unitaire », un seul déplacement est généré et visualisé. Dans le mode « autonome », un échantillon de déplacements sont générés et visualisés collectivement.
 
 ## Plan du projet
-Un plan graphique du projet est disponible **[ici]()**.
+Un plan graphique du projet est disponible **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/plan-du-projet-final.png)**.
 
 ## Outils
 **p5.js (Javascript)** : la visualisation des déplacements est programmée à l’aide du module Javascript p5.js.
