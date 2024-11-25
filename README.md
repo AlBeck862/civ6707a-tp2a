@@ -35,8 +35,9 @@ Dans un deuxième temps, ce projet vise la visualisation des données interpolé
 **Développement futur.** Nous tentons présentement d’afficher la chronométrie des déplacements à l’affiche. Nous espérons ensuite pouvoir lier le modèle d’intelligence artificielle (Python) à l’application web (p5.js Javascript) à l’aide d’un serveur, permettant donc à l’utilisateur d’accéder en temps réel à la génération de nouvelles données.
 
 ## Guide de l'usager
-Cliquez **ici** pour lire le tutoriel d'utilisation du générateur de données.
-Cliquez **ici** pour lire le tutoriel d'utilisation de l'application de visualisation.
+Cliquez **[ici]()** pour lire le tutoriel d'utilisation du générateur de données.
+
+Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/guide_visualisation.md)** pour lire le tutoriel d'utilisation de l'application de visualisation.
 
 ## Description du code (documentation)
 **Modèle d’intelligence artificielle (Python).** À venir
