@@ -27,7 +27,7 @@ Un plan graphique du projet est disponible **[ici](https://github.com/AlBeck862/
 **GitHub** : le code, les données, et la documentation ont été téléversés sur la plateforme en ligne GitHub. 
 
 ## Méthodologie et cheminement
-Cette section s'agit d'un résumé. Cliquez **[ici]()** pour lire la méthodologie complète.
+Cette section s'agit d'un résumé. Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/methodologie.md)** pour lire la méthodologie complète.
 
 **Planification du projet.** Avant de débuter notre travail, nous avons créé un plan général des composantes ainsi que des étapes du projet. Celui-ci se divise en trois composantes. La première composante est la génération de données, le deuxième composante est la visualisation, et la troisième composante est l’intégration des systèmes de génération et de visualisation.
 
