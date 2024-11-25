@@ -225,4 +225,42 @@ function setParticles() {
 }
 
 ```
+
+**1.3 Création de la fonction pour modifier la vitesse** <br>
+
+```
+function updateSpeedFactor() {
+  speedFactor = float(speedFactorInput.value());
+  console.log("Facteur de vitesse updated:", speedFactor); // Optional, log the updated value
+}
+
+```
+
+**1.4 Création de la fonction pour obtenir des déplacements aléatoires** <br>
+
+```
+function startMovement() {
+  currentIndex = 0;
+  completedCount = 0;
+
+  if (randomize) {
+    filteredRows = shuffle(filteredRows);
+  }
+}
+```
+
+**1.5 Création de la fonction pour obtenir des déplacements aléatoires** <br>
+
+```
+function startMovement() {
+  currentIndex = 0;
+  completedCount = 0;
+
+  if (randomize) {
+    filteredRows = shuffle(filteredRows);
+  }
+}
+```
+
+
 ## Importation des données
