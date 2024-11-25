@@ -208,7 +208,7 @@ update() {
   }
 }
 ```
-**1.2 Création des particules** <br>
+**1.2 Création du compteur des particules** <br>
 
 ```
 function setParticles() {
@@ -249,18 +249,55 @@ function startMovement() {
 }
 ```
 
-**1.5 Création de la fonction pour obtenir des déplacements aléatoires** <br>
+**1.5 Création et génération des particules** <br>
 
 ```
-function startMovement() {
-  currentIndex = 0;
-  completedCount = 0;
+async function createNextParticle() {
+    if (currentIndex < filteredRows.length) {
+        const row = filteredRows[currentIndex];
+        const x_origin = row.getNum('D_ORIXCOOR');
+        const y_origin = row.getNum('D_ORIYCOOR');
+        const x_dest = row.getNum('D_DESTXCOOR');
+        const y_dest = row.getNum('D_DESTYCOOR');
+        const mode = row.getString('D_MODE');
+        const age = row.getString('P_GRAGE');
+        const heure = row.getString('D_HREDE');
 
-  if (randomize) {
-    filteredRows = shuffle(filteredRows);
-  }
+        // Create the particle
+        const particle = new Particle(x_origin, y_origin, x_dest, y_dest, mode, age,heure);
+        currentIndex++;
+
+        // Wait until the route is ready
+        while (!particle.routeReady) {
+            await new Promise(resolve => setTimeout(resolve, 10)); // Check every 10ms
+        }
+
+        // Add the particle to the array only when ready
+        particles.push(particle);
+    }
+}
+```
+**1.5 Affichage des particules sur la carte** <br>
+
+```
+function draw() {
+    if (!allRoutesReady) {
+        console.log("Waiting for all routes to load...");
+        return; // Do nothing until all routes are ready
+    }
+
+    if (dataFileLoaded) {
+        particles.forEach((particle, index) => {
+            if (particle.routeReady) {
+                particle.update();
+                if (particle.isFinished()) {
+                    leafletMap.removeLayer(particle.marker);
+                    particles.splice(index, 1); 
+                }
+            }
+        });
+    }
 }
 ```
 
-
-## Importation des données
+## 2 Importation des données
