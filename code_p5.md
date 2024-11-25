@@ -277,7 +277,7 @@ async function createNextParticle() {
     }
 }
 ```
-**1.5 Affichage des particules sur la carte** <br>
+**1.6 Affichage des particules sur la carte** <br>
 
 ```
 function draw() {
