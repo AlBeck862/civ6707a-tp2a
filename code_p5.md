@@ -50,6 +50,36 @@ function setupMap() {
 }
 ```
 
+**0.3 Initialisation des boutons** <br>
+```
+function setup() {
+  noCanvas();
+  setupMap(); // Initializes the Leaflet map
+  frameRate(30);
+  
+   // Reference to the speed factor input
+  speedFactorInput = select('#speedFactorInput');
+  speedFactorInput.input(updateSpeedFactor);
+  
+// Reference to buttons in HTML instead of creating new ones
+  randomizeButton = select('#randomizeButton');
+  randomizeButton.mousePressed(toggleRandomization);
+
+  particleInput = select('#particleInput');
+  
+  let submitButton = select('#submitButton');
+  submitButton.mousePressed(setParticles);
+  
+  dataInputButton = select('#dataInputButton');
+  dataInputButton.changed(loadFileButton);
+  
+  dataInputLink = select('#dataInputLink');
+  
+  let linkFetchButton = select('#linkFetchButton');
+  linkFetchButton.mousePressed(getDataFromLink);
+
+}
+```
 
 ## 1. Génération des particules
 
