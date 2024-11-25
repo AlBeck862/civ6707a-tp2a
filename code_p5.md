@@ -4,6 +4,8 @@ https://editor.p5js.org/Freudon/sketches/AjZtj4tSD
 
 ## Génération des particules
 
+
+Cette étape permet de créer la classe des particules. On y ajoute des paramètres comme les coordonnées, le mode, l'âge et l'heure.
 ```
 class Particle {
   constructor(x_origin, y_origin, x_dest, y_dest, mode, age, heure) {
