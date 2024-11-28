@@ -5,7 +5,7 @@ https://editor.p5js.org/Freudon/sketches/AjZtj4tSD
 ## 0. Setup
 
 **0.1 Définition des particules** <br>
-
+Cette section définit les particules et leurs variables qui seront affichées sur l'écran. Notez qu'il est important pour l'utilisateur d'écrire le bon type de fichier utilisé dans la première ligne de code qui suit, cela permettra au code d'aller chercher adéquatement les informations nécessaires du fichier de données générées.
 ```
 let fileType = 'ssv' // NE PAS OUBLIER DE CHANGER LE TYPE DE FICHIER (SSV pour ;)
 
@@ -51,6 +51,7 @@ function setupMap() {
 ```
 
 **0.3 Initialisation des boutons** <br>
+La section de code qui suit définit les boutons affichées sur l'interface. Chacun de ces boutons sont liés à une fonction différente étant tous définies dans les étapes à suivre.
 ```
 function setup() {
   noCanvas();
@@ -84,7 +85,7 @@ function setup() {
 ## 1. Génération des particules
 
 **1.1 Définition des particules** <br>
-Cette étape permet de créer la classe des particules. On y ajoute des paramètres comme les coordonnées, le mode, l'âge et l'heure.
+Cette étape permet de créer la classe des particules. On y ajoute des paramètres comme les coordonnées, le mode, l'âge et l'heure. On y retrouve aussi la fonction "update" qui enclenche le mouvement des particules sur la carte.
 ```
 class Particle {
   constructor(x_origin, y_origin, x_dest, y_dest, mode, age, heure) {
@@ -227,7 +228,7 @@ function setParticles() {
 ```
 
 **1.3 Création de la fonction pour modifier la vitesse** <br>
-
+Cette étape définit la fonction reliée au boutton d'interface permettant de choisir le facteur de vitesse utilisé, ce facteur de vitesse choisi est alors multiplié aux vitesses prédéfinies en fonction du mode.
 ```
 function updateSpeedFactor() {
   speedFactor = float(speedFactorInput.value());
@@ -237,7 +238,7 @@ function updateSpeedFactor() {
 ```
 
 **1.4 Création de la fonction pour obtenir des déplacements aléatoires** <br>
-
+La fonction suivante est celle attribuée au boutton "Génération aléatoire" qui mélange aléatoirement les déplacements des données OD avant de les visualiser.
 ```
 function startMovement() {
   currentIndex = 0;
@@ -250,7 +251,7 @@ function startMovement() {
 ```
 
 **1.5 Création et génération des particules** <br>
-
+Cette fonction crée les particules des déplacement en leur attribuant leur coordonnées de départ et d'arrivée ainsi que certaines données qualitatives tel le mode utilisé, le groupe d'age de l'individus et l'heure de départ.
 ```
 async function createNextParticle() {
     if (currentIndex < filteredRows.length) {
@@ -278,7 +279,7 @@ async function createNextParticle() {
 }
 ```
 **1.6 Affichage des particules sur la carte** <br>
-
+La fonction suivante affiche les particules qui se déplacent sur la carte.
 ```
 function draw() {
     if (!allRoutesReady) {
