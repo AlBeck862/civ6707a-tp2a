@@ -39,11 +39,34 @@ Il est important de s'assurer que le typer de fichier de données sélectionné 
 
 <img width="485" alt="image" src="https://github.com/user-attachments/assets/a9751fa4-5d96-4c36-81a1-c41fb7fc0278">
 
-## 2. Visualisation aléatoire
+
+## 2. Utilisation des différentes fonctionnalités de l'outil
+
+La section suivante décrit les différentes fonctionnalités présentes pour personnaliser la visualisation des déplacements importés à l'étape précédente.
+
+**2.1 Visualisation aléatoire** <br>
+
+Le boutton "Génération aléatoire" permet de mélanger aléatoirement les données OD importés avant de les visualiser. Si ce boutton n'est pas appuyé avant la le départ de la visualisation, les déplacement seront affiché dans l'ordre original du fichier importé, ce qui n'est pas toujours idéal pour représenter adéquatement l'étendue des données.
+
+<img width="465" alt="image" src="https://github.com/user-attachments/assets/98c8e2c1-172f-4ca6-b70a-0b8dc092fd99">
 
 
+**2.2 Facteur de vitesse** <br>
 
-## 3. Facteur de vitesse
+Le facteur de vitesse permet de contrôler la vitesse de déplacement des particules sur l'écran. Celle-ci fonctionne en multipliant le facteur de vitesse sélectionné aux valeurs de vitesses prédéfinies en fonction du mode de déplacement attribué à la particule (Auto-conducteur, Marche Vélo, Transport en commun, etc.).
+
+<img width="458" alt="image" src="https://github.com/user-attachments/assets/f3040994-f536-4c82-98bd-5006e798bc9c">
 
 
-## 4. Nombre de particules et visualisation
+**2.3 Nombre de particules** <br>
+
+Il est possible de choisir le nombre de particules à visualiser en même temps sur la carte. Il suffit d'inscrire le nombre de particule souhaité dans la case appropriée illustrée ci dessous:
+
+<img width="458" alt="image" src="https://github.com/user-attachments/assets/269f5073-7ce2-45d3-96e0-2f249f06d5c2">
+
+
+## 3. Démarrage de la visualistation
+
+Une fois que les étapes 1 et 2 soient complétées, appuyez sur le boutton "Nbre Particules" pour démarrer la visualisation.
+
+<img width="458" alt="image" src="https://github.com/user-attachments/assets/9ee08f57-82d7-4077-8fe0-18d727af68b2">
