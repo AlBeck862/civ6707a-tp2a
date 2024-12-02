@@ -35,7 +35,7 @@ https://raw.githubusercontent.com/AlBeck862/civ6707a-tp2a/refs/heads/main/OD_com
 
 **À NOTER** <br>
 
-Il est important de s'assurer que le typer de fichier de données sélectionné correspond à celui dont le code peut lire. L'outils de visualisation peut lire seulement les fichiers de type CSV ou SSV et ce type doit être spécifier dans la première ligne du code affiché ci-dessous:
+Il est important de s'assurer que le type de fichier de données sélectionné correspond à celui dont le code peut lire. L'outils de visualisation peut lire seulement les fichiers de type CSV ou SSV et ce type doit être spécifier dans la première ligne du code affiché ci-dessous:
 
 <img width="485" alt="image" src="https://github.com/user-attachments/assets/a9751fa4-5d96-4c36-81a1-c41fb7fc0278">
 
