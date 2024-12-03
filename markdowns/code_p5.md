@@ -41,6 +41,7 @@ const wgs84 = "+proj=longlat +datum=WGS84 +no_defs";
 let leafletMap;
 ```
 **0.2 Mise en place de la carte** <br>
+Ici, on utilise Leaflet, qui est une librairie Javascript pour des cartes interactives (dont OSM). Ceci nous permet de centrer initialement la carte sur Montréal et ce sera nécessaire pour afficher les déplacements.
 ```
 function setupMap() {
   leafletMap = L.map('mapid').setView([45.5088, -73.5878], 11); // Center on Montreal
@@ -210,7 +211,7 @@ update() {
 }
 ```
 **1.2 Création du compteur des particules** <br>
-
+Cette fonction est le compteur du nombre de particules. Défini dans l'interface, la fonction permet de spécifier la quantité de particules qui seront générées. On appelle aussi la fonction *createNextParticle()* qui sera décrite plus loin.
 ```
 function setParticles() {
     let numParticles = int(particleInput.value());
@@ -304,6 +305,7 @@ function draw() {
 ## 2 Importation des données
 
 **2.1 Définition de la fonction qui retourne la route OSRM** <br>
+Cette première fonction est très importante; elle permet d'obtenir les coordonnées de la route à partir du API d'OSRM. On donne les coordonées initiales, en latitue et longitude, puis on obtient la route pour les coordonnées. Celle-ci sera ensuite affichée dans p5.js.
 ```
 async function fetchRoute(startLatLng, endLatLng) {
   const url = `https://router.project-osrm.org/route/v1/driving/${startLatLng.lng},${startLatLng.lat};${endLatLng.lng},${endLatLng.lat}?overview=full&geometries=geojson`;
@@ -328,7 +330,7 @@ async function fetchRoute(startLatLng, endLatLng) {
 ```
 
 **2.2 Définition de la fonction pour importer les données avec un lien** <br>
-
+Cette fonction est utilisée pour importer les données à partir d'un lien.
 ```
 async function getDataFromLink() {
   if (isValidURL()) {
@@ -357,7 +359,7 @@ async function getDataFromLink() {
 ```
 
 **2.3 Définition de la fonction pour vérifier si les données sont importées** <br>
-
+Cette fonction permet de vérifier que la table de données est bien chargée. 
 ```
 function loadTableAsync(url, format, header) {
     return new Promise((resolve, reject) => {
@@ -370,7 +372,7 @@ function loadTableAsync(url, format, header) {
 ```
 
 **2.4 Ajout de la fonctionnalité pour importer les données à partir d'un CSV** <br>
-
+Ces fonctions permettent d'importer les données d'une deuxième façon, avec un fichier CSV. On définit ce qui se produit lorsque l'utilisateur appuie sur le bouton.
 ```
 document.addEventListener("DOMContentLoaded", () => {
   // Get references to HTML elements
@@ -411,7 +413,7 @@ function loadFileButton(file) {
 ```
 
 **2.5 Ajout de la fonction pour "randomize" les données** <br>
-
+C'est une fonction très simple qui permet de *shuffle* l'ordre dans lequel les déplacements sont pigés. Initialement, *randomize* est *False*, et lorsque l'utilisateur appuie sur le bouton, il devient vrai.
 ```
 function toggleRandomization() {
   randomize = !randomize;
@@ -421,7 +423,7 @@ function toggleRandomization() {
 ```
 
 **2.6 Lecture d'un fichier csv** <br>
-
+Plutôt, les fonctions pour importer les données ont été présentées. Ici, la fonction sert à lire les fichiers, obtenir le nom des colonnes et les informations de chaque ligne.
 ```
 function parseCSV(data) {
     // Create a new p5.Table
@@ -451,7 +453,7 @@ function parseCSV(data) {
 ```
 
 **2.7 Vérification d'un URL** <br>
-
+Ce code permet de définir une fonction qui vérifie si le format du URL est le bon.
 ```
 function isValidURL() {
     const urlPattern = /^(https?:\/\/)?([a-z0-9-]+\.)+[a-z]{2,}(:\d+)?(\/\S*)?$/i;
@@ -461,7 +463,8 @@ function isValidURL() {
 ```
 
 **2.8 Fonction pour filtrer les données extrêmes** <br>
-
+Cette fonction est utile pour s'assurer de ne pas afficher de données aberrantes. Les distances des déplacements sont calculées et le 1% des distances les plus élevées ne sont pas considérées. Ceci permet de ne pas afficher des déplacements qui pourraient causer des problèmes avec notre outil de visualisation.
+```
 function filterTop1PercentFarthest() {
   let distances = [];
   
