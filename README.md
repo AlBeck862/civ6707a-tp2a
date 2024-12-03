@@ -63,8 +63,13 @@ Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/c
 
 ## Contributions
 Tous les membres ont lu _The Nature of Code_ et ont contribué à la documentation.
+
 Loïc Miara : recherche au sujet du/développement du modèle d'intelligence artificielle
+
 Tannaz Jahaniaghdam : recherche au sujet du/développement du modèle d'intelligence artificielle
+
 Frédéric Cournoyer : développement de l'application de visualisation
+
 Anthony Pek : développement de l'application de visualisation
+
 Alexander Becker : développement de l'application de visualisation
