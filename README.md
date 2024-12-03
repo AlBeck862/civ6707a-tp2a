@@ -41,7 +41,7 @@ Cette section s'agit d'un résumé. Veuillez naviguer vers les autres documents 
 **Développement futur.** L'application de visualisation pourrait être développée davantage en ajoutant une connexion directe vers le modèle d’intelligence artificielle. Un serveur opérerait le générateur de données en _backend_, permettant à l'utilisateur de faire des requêtes sur-demande au générateur depuis l'application (le _frontend_). Une fois le modèle d'intelligence artificielle perfectionné, il serait possible de lui faire une demande en mode unitaire ou en mode autonome. L'application pourrait aussi afficher davantage d'informations pertinentes dépendant du mode choisi. Par exemple, un déplacement unitaire pourrait afficher le temps du déplacement à l'aide d'un chronomètre.
 
 ## Guide de l'usager
-Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/guide_generateur.md)** pour lire le tutoriel d'utilisation du générateur de données.
+Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/pdf/rapport-reseau-neuroness-loic.pdf)** pour lire le rapport de création du générateur de données de type GAN de Loïc.
 
 Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/guide_visualisation.md)** pour lire le tutoriel d'utilisation de l'application web.
 
