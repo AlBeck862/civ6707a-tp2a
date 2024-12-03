@@ -56,7 +56,7 @@ Cliquez **ici (à venir)** pour lire la documentation du code du générateur de
 
 **Application web (p5.js Javascript).**
 
-Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/code_p5.md)** pour lire la documentation du code de l'application web.
+Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/visualisation/code_p5.md)** pour lire la documentation du code de l'application web.
 
 ## Limitations et actions correctives
 **Génération.** Le générateur ne crée toujours pas des données respectant les distributions des données origine-destination réelles. Il faudrait donc optimiser le modèle choisi ou entièrement changer d'approche. De plus, seules les données origine-destination de l'arrondissement d'Ahuntsic-Cartierville ont été utilisées pour entraîner le modèle. Le modèle ne pourrait donc générer qu'uniquement de nouvelles données pour cet arrondissement, même s'il fonctionnait parfaitement. Il faudrait entraîner le modèle à l'aide d'un répertoire de données plus vaste, et tenter de généraliser les motifs à l'ensemble de la ville ou même de la province en entier.
