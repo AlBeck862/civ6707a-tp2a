@@ -302,3 +302,188 @@ function draw() {
 ```
 
 ## 2 Importation des données
+
+**2.1 Définition de la fonction qui retourne la route OSRM** <br>
+```
+async function fetchRoute(startLatLng, endLatLng) {
+  const url = `https://router.project-osrm.org/route/v1/driving/${startLatLng.lng},${startLatLng.lat};${endLatLng.lng},${endLatLng.lat}?overview=full&geometries=geojson`;
+  
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`OSRM API Error: ${response.status}`);
+    
+    const data = await response.json();
+    if (data.routes && data.routes.length > 0) {
+      return data.routes[0].geometry.coordinates; // Return the route coordinates
+    } else {
+      console.error("No routes found for the given coordinates");
+      return null;
+    }
+  } catch (error) {
+    console.error("Error fetching route:", error);
+    return null;
+  }
+}
+
+```
+
+**2.2 Définition de la fonction pour importer les données avec un lien** <br>
+
+```
+async function getDataFromLink() {
+  if (isValidURL()) {
+    let link = dataInputLink.value();
+
+    try { // CHANGE IF CSV
+          table = await loadTableAsync(link, fileType, 'header');
+          // console.log("Table loaded successfully.");
+          // console.log("Row count:", table.getRowCount());
+          // console.log("First value:", table.getString(0, 0));
+    } catch (error) {
+          console.error("Error loading table:", error);
+      }
+
+    filteredRows = filterTop1PercentFarthest();
+  
+    // Declare that the data file has been loaded by the user
+    dataFileLoaded = true;
+    startMovement();
+    
+  } else {
+    console.log("Lien invalide");
+  }
+  
+}
+```
+
+**2.3 Définition de la fonction pour vérifier si les données sont importées** <br>
+
+```
+function loadTableAsync(url, format, header) {
+    return new Promise((resolve, reject) => {
+        loadTable(url, format, header, 
+            (loadedTable) => resolve(loadedTable),
+            (error) => reject(error)
+        );
+    });
+}
+```
+
+**2.4 Ajout de la fonctionnalité pour importer les données à partir d'un CSV** <br>
+
+```
+document.addEventListener("DOMContentLoaded", () => {
+  // Get references to HTML elements
+  const dataInputButton = document.getElementById("dataInputButton");
+
+  dataInputButton.addEventListener("change", () => {
+    const file = dataInputButton.files[0]; // Access the selected file
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (event) {
+        const fileData = event.target.result;
+        loadFileButton({ type: 'text', data: fileData });
+      };
+      reader.readAsText(file);
+    } else {
+      console.log("No file selected");
+    }
+  });
+});
+
+function loadFileButton(file) {
+  if (file.type === 'text') {
+    console.log("File loaded:", file.data.substring(0, 100)); // Log the first 100 characters
+
+    const delimiter = file.data.includes(';') ? ';' : ',';
+    table = parseCSV(file.data, delimiter);
+
+    console.log("Table loaded with rows:", table.getRowCount());
+    filteredRows = filterTop1PercentFarthest();
+
+    dataFileLoaded = true;
+    startMovement();
+  } else {
+    console.log("Invalid file type:", file.type);
+  }
+}
+
+```
+
+**2.5 Ajout de la fonction pour "randomize" les données** <br>
+
+```
+function toggleRandomization() {
+  randomize = !randomize;
+  startMovement();
+}
+
+```
+
+**2.6 Lecture d'un fichier csv** <br>
+
+```
+function parseCSV(data) {
+    // Create a new p5.Table
+    let newTable = new p5.Table();
+    
+    // Split the data into rows
+    let rows = data.split('\n');
+    
+    // Process the first row to create headers
+    let headers = rows[0].split(','); // CHANGE IF CSV
+    for (let header of headers) {
+        newTable.addColumn(header.trim());
+    }
+    
+    // Process the remaining rows
+    for (let i = 1; i < rows.length; i++) {
+        let row = rows[i].split(','); // CHANGE IF CSV
+        let newRow = newTable.addRow();
+        for (let j = 0; j < row.length; j++) {
+            newRow.setString(headers[j].trim(), row[j].trim());
+        }
+    }
+    
+    return newTable;
+}
+
+```
+
+**2.7 Vérification d'un URL** <br>
+
+```
+function isValidURL() {
+    const urlPattern = /^(https?:\/\/)?([a-z0-9-]+\.)+[a-z]{2,}(:\d+)?(\/\S*)?$/i;
+    return urlPattern.test(dataInputLink.value());
+}
+
+```
+
+**2.8 Fonction pour filtrer les données extrêmes** <br>
+
+function filterTop1PercentFarthest() {
+  let distances = [];
+  
+  for (let i = 0; i < table.getRowCount()-1; i++) {
+    let row = table.getRow(i);
+    
+    let x_origin = row.getNum('D_ORIXCOOR');
+    let y_origin = row.getNum('D_ORIYCOOR');
+    let x_dest = row.getNum('D_DESTXCOOR');
+    let y_dest = row.getNum('D_DESTYCOOR');
+    
+    if (x_origin === x_dest && y_origin === y_dest) continue;
+    
+    let distance = dist(x_origin, y_origin, x_dest, y_dest);
+    distances.push({ row: row, distance: distance });
+  }
+
+  distances.sort((a, b) => a.distance - b.distance);
+  let cutoff = Math.floor(distances.length * 0.99);
+
+  return distances.slice(0, cutoff).map(d => d.row);
+}
+
+
+```
