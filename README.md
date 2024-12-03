@@ -62,14 +62,9 @@ Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/c
 **Intégration.** [Tel que discuté ci-haut](#dev-futur), un lien entre l'application web et le générateur de données pourrait être établi à l'aide d'un serveur, permettant à un utilisateur de générer des données sur-demande. Présentement, le générateur doit produire des données qui sont, par la suite, exportées en format CSV. Ce fichier CSV est ensuite téléversé à l'application de visualisation.
 
 ## Contributions
-Tous les membres ont lu _The Nature of Code_ et ont contribué à la documentation.
-
-Loïc Miara : recherche au sujet du/développement du modèle d'intelligence artificielle
-
-Tannaz Jahaniaghdam : recherche au sujet du/développement du modèle d'intelligence artificielle
-
-Frédéric Cournoyer : développement de l'application de visualisation
-
-Anthony Pek : développement de l'application de visualisation
-
-Alexander Becker : développement de l'application de visualisation
+Tous les membres ont lu _The Nature of Code_ et ont contribué à la documentation.<br>
+Loïc Miara : recherche au sujet du/développement du modèle d'intelligence artificielle<br>
+Tannaz Jahaniaghdam : recherche au sujet du/développement du modèle d'intelligence artificielle<br>
+Frédéric Cournoyer : développement de l'application de visualisation<br>
+Anthony Pek : développement de l'application de visualisation<br>
+Alexander Becker : développement de l'application de visualisation<br>
