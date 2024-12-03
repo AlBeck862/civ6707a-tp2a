@@ -33,6 +33,8 @@ La deuxième option d'importation de données est à partir d'un lien Github qui
 Dans le cas de notre projet, le lien Github utilisé pour accéder aux données OD de base est le suivant:
 https://raw.githubusercontent.com/AlBeck862/civ6707a-tp2a/refs/heads/main/OD_complet.csv
 
+Il est important de noter que le lien Github doit être sous format raw.
+
 **À NOTER** <br>
 
 Il est important de s'assurer que le type de fichier de données sélectionné correspond à celui dont le code peut lire. L'outils de visualisation peut lire seulement les fichiers de type CSV ou SSV et ce type doit être spécifier dans la première ligne du code affiché ci-dessous:
@@ -67,6 +69,6 @@ Il est possible de choisir le nombre de particules à visualiser en même temps 
 
 ## 3. Démarrage de la visualistation
 
-Une fois que les étapes 1 et 2 ont été complétées, appuyez sur le boutton "Nbre Particules" pour démarrer la visualisation.
+Une fois que les étapes 1 et 2 ont été complétées, appuyez sur le boutton "Nbre Particules" pour démarrer la visualisation. En fonction du nombre de particules choisi, le temps de chargement des routes peut varier (généralement de quelques secondes). Les déplacements débutent lorsque toutes les routes sont chargées.
 
 <img width="458" alt="image" src="https://github.com/user-attachments/assets/9ee08f57-82d7-4077-8fe0-18d727af68b2">
