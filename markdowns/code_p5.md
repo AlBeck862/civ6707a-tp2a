@@ -330,7 +330,7 @@ async function fetchRoute(startLatLng, endLatLng) {
 ```
 
 **2.2 Définition de la fonction pour importer les données avec un lien** <br>
-Cette fonction est utilisée pour importer les données à partir d'un lien.
+Cette fonction est utilisée pour importer les données à partir d'un lien. On obtient ensuite une table avec les données, si le type de lien est le bon.
 ```
 async function getDataFromLink() {
   if (isValidURL()) {
@@ -423,7 +423,7 @@ function toggleRandomization() {
 ```
 
 **2.6 Lecture d'un fichier csv** <br>
-Plutôt, les fonctions pour importer les données ont été présentées. Ici, la fonction sert à lire les fichiers, obtenir le nom des colonnes et les informations de chaque ligne.
+Plus tôt, les fonctions pour importer les données ont été présentées. Ici, la fonction sert à lire les fichiers, obtenir le nom des colonnes et les informations de chaque ligne.
 ```
 function parseCSV(data) {
     // Create a new p5.Table
