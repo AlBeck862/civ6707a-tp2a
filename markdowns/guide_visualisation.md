@@ -69,6 +69,6 @@ Il est possible de choisir le nombre de particules à visualiser en même temps 
 
 ## 3. Démarrage de la visualistation
 
-Une fois que les étapes 1 et 2 ont été complétées, appuyez sur le boutton "Nbre Particules" pour démarrer la visualisation. En fonction du nombre de particules choisi, le temps de chargement des routes peut varier (généralement de quelques secondes). Les déplacements débutent lorsque toutes les routes sont chargées.
+Une fois que les étapes 1 et 2 ont été complétées, appuyez sur le boutton "Nbre Particules" pour démarrer la visualisation. En fonction du nombre de particules choisies, le temps de chargement des routes peut varier (généralement de quelques secondes). Les déplacements débutent lorsque toutes les routes sont chargées.
 
 <img width="458" alt="image" src="https://github.com/user-attachments/assets/9ee08f57-82d7-4077-8fe0-18d727af68b2">
