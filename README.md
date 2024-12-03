@@ -45,7 +45,7 @@ Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/pdf/rapport
 
 Cliquez **ici (à venir)** pour lire le rapport de création du générateur de données de Tannaz.
 
-Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/guide_visualisation.md)** pour lire le tutoriel d'utilisation de l'application web.
+Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/visualisation/guide_visualisation.md)** pour lire le tutoriel d'utilisation de l'application web.
 
 ## Description du code (documentation)
 **Modèle d’intelligence artificielle (Python).**
