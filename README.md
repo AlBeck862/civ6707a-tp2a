@@ -43,12 +43,16 @@ Cette section s'agit d'un résumé. Veuillez naviguer vers les autres documents 
 ## Guide de l'usager
 Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/pdf/rapport-reseau-neuroness-loic.pdf)** pour lire le rapport de création du générateur de données de type GAN de Loïc.
 
+Cliquez **ici (à venir)** pour lire le rapport de création du générateur de données de Tannaz.
+
 Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/guide_visualisation.md)** pour lire le tutoriel d'utilisation de l'application web.
 
 ## Description du code (documentation)
 **Modèle d’intelligence artificielle (Python).**
 
-Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/markdowns/code_gen.md)** pour lire la documentation du code du générateur.
+Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/tree/main/GAN-loic)** pour lire la documentation du code du générateur de données de type GAN de Loïc.
+
+Cliquez **ici (à venir)** pour lire la documentation du code du générateur de données de Tannaz.
 
 **Application web (p5.js Javascript).**
 
