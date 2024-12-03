@@ -52,7 +52,7 @@ Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/visualisati
 
 Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/tree/main/GAN-loic)** pour lire la documentation du code du générateur de données de type GAN de Loïc.
 
-Cliquez **ici (à venir)** pour lire la documentation du code du générateur de données de Tannaz.
+Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/tree/main/NN-tannaz)** pour lire la documentation du code du générateur de données de Tannaz.
 
 **Application web (p5.js Javascript).**
 
