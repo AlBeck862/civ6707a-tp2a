@@ -405,9 +405,7 @@ function loadFileButton(file) {
 
     dataFileLoaded = true;
     startMovement();
-  } else {
-    console.log("Invalid file type:", file.type);
-  }
+  } 
 }
 
 ```
