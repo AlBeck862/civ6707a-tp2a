@@ -31,7 +31,7 @@ La deuxième option d'importation de données est à partir d'un lien Github qui
 
 
 Dans le cas de notre projet, le lien Github utilisé pour accéder aux données OD de base est le suivant:
-https://raw.githubusercontent.com/AlBeck862/civ6707a-tp2a/refs/heads/main/OD_complet.csv
+https://raw.githubusercontent.com/AlBeck862/civ6707a-tp2a/refs/heads/main/csv/OD_complet.csv
 
 Il est important de noter que le lien Github doit être sous format raw.
 
