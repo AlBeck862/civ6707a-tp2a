@@ -451,7 +451,7 @@ function parseCSV(data) {
 ```
 
 **2.7 Vérification d'un URL** <br>
-Ce code permet de définir une fonction qui vérifie si le format du URL est le bon.
+Ce code permet de définir une fonction qui vérifie si le format du URL est le bon. Ceci permet d'éviter des erreurs pour la lecture de liens.
 ```
 function isValidURL() {
     const urlPattern = /^(https?:\/\/)?([a-z0-9-]+\.)+[a-z]{2,}(:\d+)?(\/\S*)?$/i;
