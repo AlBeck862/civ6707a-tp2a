@@ -45,7 +45,7 @@ En parallèle, toutefois, nous travaillions sur la visualisation à l’aide de 
 ## Guide de l'usager
 Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/GAN-loic/rapport-reseau-neuroness-loic.pdf)** pour lire le rapport de création du générateur de données de type GAN de Loïc.
 
-Cliquez **ici (à venir)** pour lire le rapport de création du générateur de données de Tannaz.
+Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/NN-tannaz/Methodology_Tannaz.md)** pour lire le rapport de création du générateur de données de Tannaz.
 
 Cliquez **[ici](https://github.com/AlBeck862/civ6707a-tp2a/blob/main/visualisation/guide_visualisation.md)** pour lire le tutoriel d'utilisation de l'application web.
 
