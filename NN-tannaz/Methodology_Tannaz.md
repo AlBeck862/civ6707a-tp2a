@@ -1,3 +1,12 @@
+This report includes:
+1- **Detailed Report: Unsuccessful Attempts to Generate Fake Data Using Variational Autoencoders (VAEs)**
+2- **Detailed Report: Analysis of Additional VAE Variants**
+3- **Detailed Report: Unsuccessful Methods for Generating Fake Data Using RNNs, LSTMs, and Variants**
+4- **Report: Implementation of Noise Augmentation, GAN, and Multilayer Perceptron**
+5- **Report: Implementation of Feedforward Neural Network for P-SEXE, P-GRAGE, and DHREDE**
+6- **Report: Implementation of Feedforward Neural Network for Generating Synthetic Spatial Data**
+
+
 **Detailed Report: Unsuccessful Attempts to Generate Fake Data Using Variational Autoencoders (VAEs)**
 1. Introduction
 This report includes the unsuccessful efforts to generate synthetic data using Variational Autoencoders (VAEs). 
@@ -66,7 +75,7 @@ Key shortcomings included:
 3.	Failure to replicate the frequency distribution of the original data.
 
 
-**Detailed Report (Continued): Analysis of Additional VAE Variants**
+**Detailed Report: Analysis of Additional VAE Variants**
 8. Second VAE Iteration (Developing VAE2)
 ________________________________________
 Modifications Introduced
@@ -474,7 +483,7 @@ Future Directions:
 ________________________________________
 
 ________________________________________
-Report: Implementation of Feedforward Neural Network for P-SEXE, P-GRAGE, and DHREDE
+**Report: Implementation of Feedforward Neural Network for P-SEXE, P-GRAGE, and DHREDE**
 1. Introduction
 This project implements a feedforward neural network (FNN) to model relationships among demographic and trip-related variables. The dataset focuses on the following attributes:
 •	P-SEXE: Gender, encoded as binary or categorical data.
