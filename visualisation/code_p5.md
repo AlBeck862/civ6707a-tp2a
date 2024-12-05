@@ -359,7 +359,7 @@ async function getDataFromLink() {
 ```
 
 **2.3 Définition de la fonction pour vérifier si les données sont importées** <br>
-Cette fonction permet de vérifier que la table de données est bien chargée. 
+Cette fonction permet de vérifier que la table de données est bien chargée. Elle sert surtout à faire du debugging lorsque les particules n'apparaissent pas. 
 ```
 function loadTableAsync(url, format, header) {
     return new Promise((resolve, reject) => {
@@ -421,7 +421,7 @@ function toggleRandomization() {
 ```
 
 **2.6 Lecture d'un fichier csv** <br>
-Plus tôt, les fonctions pour importer les données ont été présentées. Ici, la fonction sert à lire les fichiers, obtenir le nom des colonnes et les informations de chaque ligne.
+Plus tôt, les fonctions pour importer les données ont été présentées. Ici, la fonction sert à lire les fichiers, obtenir le nom des colonnes et les informations de chaque ligne. Ensuite, la fonction *parseCSV* est utilisée lorsqu'on importe des données par un fichier.
 ```
 function parseCSV(data) {
     // Create a new p5.Table
